@@ -1,0 +1,14 @@
+{
+  "name": "thundercolorpicker",
+  "version": "1.0.0",
+  "description": "Color Picker for Desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "RaigekiCrimson",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  }
+}
