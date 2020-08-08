@@ -5,10 +5,13 @@ function createMainWindow() {
         mainWindow = new BrowserWindow({
         title: 'Thunder Color Picker',
         width: 1280,
-        height: 800
+        height: 800,
+            webPreferences: {
+            nodeIntegration: true
+            }
     })
 
-    mainWindow.loadURL(`file://${__dirname}/app/index.html`)
+    mainWindow.loadFile('index.html')
 }
 
-app.on('ready', createMainWindow)
+app.whenReady().then(createMainWindow)

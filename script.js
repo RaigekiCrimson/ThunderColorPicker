@@ -80,4 +80,12 @@ getSpectrumWrapper().addEventListener("mousemove", (e) => {
     document.querySelector(".green").innerText = g
     document.querySelector(".blue").innerText = b
     document.querySelector(".hex").innerText = hexValue
+
+    // Change the background color of #color-preview
+    let previewColor = document.getElementById('color-preview')
+    setPreviewColor('color-preview', hexValue)
 })
+
+function setPreviewColor(element, color) {
+    element.style.backgroundColor = color
+}

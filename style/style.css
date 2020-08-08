@@ -1,3 +1,7 @@
+/*:root {
+    --previewColor:
+}*/
+
 .spectrum-wrapper {
     cursor: crosshair;
     width: 360px;
@@ -44,4 +48,13 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+#color-preview {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
 }
