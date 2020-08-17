@@ -1,5 +1,7 @@
 // Get panel from index.html
 let panel = document.getElementById('panel')
+// Get picked color
+let picked_color = document.getElementById('picked-color-1')
 
 // Create Pickr
 const pickr = Pickr.create({
@@ -47,8 +49,15 @@ const pickr = Pickr.create({
 
 // Get RGBA Values from pickr
 pickr.on('change', (...args) => {
-    let color = args[0].toRGBA();
+    let color = args[0].toRGBA()
     console.log('change', args)
     this.panel.style.backgroundColor = `rgba(${color[0]},${color[1]},${color[2]},${color[3]}`
+})
+
+// Save color and display on 'picked-color
+pickr.on('save', (color) => {
+    let saved_color = color[0].toRGBA()
+    console.log('save', color)
+    this.picked_color.style.backgroundColor = `rgba(${color[0]},${color[1]},${color[2]},${color[3]}`
 })
 

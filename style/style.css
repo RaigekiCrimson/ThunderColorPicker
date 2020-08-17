@@ -1,12 +1,14 @@
 body {
-    background-color: #1e1e1e;
+    background-color: #323232;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: #bababa;
 }
 
 .panel {
     display: grid;
     width: 200px;
     height: 200px;
-    margin-bottom: 10px;
+    margin: auto;
     border: 1px solid white;
 }
 
@@ -15,7 +17,7 @@ body {
 }
 
 .grid-container {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 20px;
 }
@@ -24,5 +26,6 @@ body {
     background-color: lightcoral;
     border: 1px solid white;
     padding: 20px;
+    height: 75px;
 }
 
