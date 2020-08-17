@@ -1,18 +1,28 @@
-.swatch {
+body {
+    background-color: #1e1e1e;
+}
+
+.panel {
     display: grid;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 1px solid white;
 }
 
-#swatch_1 {
-    background-color: aqua;
+#panel {
+    background-color: rgba(177, 132, 64, 1);
 }
 
-#swatch_2 {
-    background-color: blueviolet;
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 20px;
 }
 
-#swatch_3 {
-    background-color: cadetblue;
+.picked-color {
+    background-color: lightcoral;
+    border: 1px solid white;
+    padding: 20px;
 }
+

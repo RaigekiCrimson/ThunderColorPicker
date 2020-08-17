@@ -6,22 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thunder Color Picker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
 </head>
 <body>
-<div class="swatch" id="swatch_1">
-    <h4>Color 1</h4>
-</div>
-<br>
-<div class="swatch" id="swatch_2">
-    <h4>Color 2</h4>
-</div>
-<br>
-<div class="swatch" id="swatch_3">
-    <h4>Color3</h4>
-</div>
+<div class="panel" id="panel"></div>
+<div class="color-picker"></div>
 
+<br>
+
+<div class="grid-container">
+    <!--show up to 5 picked colors-->
+    <div class="picked-color" id="picked-color-1"></div>
+    <div class="picked-color" id="picked-color-2"></div>
+    <div class="picked-color" id="picked-color-3"></div>
+    <div class="picked-color" id="picked-color-4"></div>
+    <div class="picked-color" id="picked-color-5"></div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 <script src="script.js"></script>
