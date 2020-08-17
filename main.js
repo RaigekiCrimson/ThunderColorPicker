@@ -4,8 +4,8 @@ let mainWindow
 function createMainWindow() {
         mainWindow = new BrowserWindow({
         title: 'Thunder Color Picker',
-        width: 1280,
-        height: 800,
+        width: 1024,
+        height: 768,
             webPreferences: {
             nodeIntegration: true
             }

@@ -5,28 +5,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
     <title>Thunder Color Picker</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
 </head>
 <body>
-<div class="spectrum-wrapper">
-    <div class="spectrum-layer"></div>
-    <div class="saturation-white"></div>
-    <div class="saturation-black"></div>
+<div class="swatch" id="swatch_1">
+    <h4>Color 1</h4>
 </div>
-<div>
-    <br>
-    Move Mouse Over Spectrum to see RGB values
-    <br>
-    <br>
-
-    <div>Red: <span class="red"></span></div>
-    <div>Green: <span class="green"></span></div>
-    <div>Blue: <span class="blue"></span></div>
-
-    <div><br>Hex: <span class="hex"></span></div>
-    <div id="color-preview"></div>
+<br>
+<div class="swatch" id="swatch_2">
+    <h4>Color 2</h4>
 </div>
+<br>
+<div class="swatch" id="swatch_3">
+    <h4>Color3</h4>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
